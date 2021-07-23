@@ -1,0 +1,314 @@
+body{
+    margin: 0%;
+    color: red;
+    background-color:#ffe89be5;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    color:#d10909;
+    font-size: 70px;
+}
+
+.main-port{
+    margin: 5px 4px;
+    text-shadow:10px 15px 9px  #fdf691;
+    -webkit-text-stroke: rgb(31, 14, 2);
+}
+
+.img-princ{
+    width: 100%;
+    height: 275px;
+    margin: 1px 0 1px 0;
+}
+
+ul{
+    margin: 5px 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+label{
+    text-align: center;
+    font-size: 25px;
+}
+
+li{
+    float: left;
+    display: block;
+    padding: 10px 10px;
+    border: 3px  solid brown ;
+    border-radius: 5px ;
+    cursor: pointer;
+    font-family: cursive;
+    font-size: 25px;
+    background-color:#f8d696;
+    margin: 3px 3px;
+    margin-left: 10%;
+    align-items: center;
+}
+
+li:hover{
+    background-color: #9199e5;
+}
+
+.main-content{
+    border: 1px solid black;
+    margin: 80px auto;
+    width: 70%;
+    height: auto;
+    padding: 15px 15px;
+
+}
+
+.main-pan{
+    width: 80%;
+    margin: 80px auto;
+    height: auto;
+    padding: 30px 25px;
+    font-size: 20px;
+    border:1px solid red;
+}
+
+.div-row {
+    display: block;
+    padding: 20px 20px;
+}
+
+select, input, .botor {
+    height: 30px;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+select {
+    width: 70%;
+}
+
+.botor{
+    background-color:#ff7b00;
+    font-size: 1em;
+    width: 200px;
+    margin-left: 550px;
+}
+
+.div-row label {
+    width: 10%;
+    display: inline-block;
+    text-align: left;
+    padding-right: 15px;
+}
+
+.titulo{
+    text-align: center;
+    display: block;
+    font-family: cursive;
+    text-align: center;
+    color:#881111;
+    font-size: 270%;
+    text-shadow:10px 15px 9px  #6260ec
+}
+
+/*icono del hotel*/
+.icon-hotel{
+    background-image: url(/images/hotel.jpg);
+    background-repeat: no-repeat;
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*********************video dentro de una pagina****************/
+iframe {
+    margin-top: 10px;
+    width: 100%;
+    height: 200px;
+}
+
+/*******************carrusel de imagenes **********************/
+.slider{
+    width: 1000px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 450px;
+}
+
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 1000px;
+    height: 500px;
+}
+
+/*manual navigation*/
+.navigation-manual{
+     position: absolute;
+     width: 55%;
+     margin-top: 420px;
+     display: flex;
+     justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: red;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked  ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked  ~ .first{
+    margin-left: -60%;
+}
+
+#radio5:checked  ~ .first{
+    margin-left: -80%;
+}
+
+/*navigation auto*/
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 55%;
+    justify-content: center;
+    margin-top: 420px;
+}
+
+.navigation-auto div{
+    border: 2px solid;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: red;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: red;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: red;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: red;
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    background: red;
+}
+
+
+
+
+/************************pie de pagina*******************/
+footer{
+    position: relative;
+    top: 20;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 251, 251);
+    width: 100%;
+    height: 100px;
+}
+
+.footer-nadvar{
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-nadvar span{
+    text-align: center;
+}
+
+.img-ico{
+    position: relative;
+    margin-top: -50%;
+    top: 20;
+    padding: 1px;
+}
+
+@media screen and (max-width: 950px){
+    h1{
+        font-size: 40px;
+    }
+    .main-port ul{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 80%;
+    }
+    .div-row #cbxIngreseOrigen{
+        width: 50%;
+        margin-left: 100px;
+    }
+    .div-row #cbxIngreseDestino{
+        width: 50%;
+        margin-left: 100px;
+    }
+    .div-row #txtCantPasajeros{
+        width: 50%;
+        margin-left: 100px;
+    }
+    .botor{
+        margin-left: 200px;
+    }
+    
+    .slider{
+        margin-left: 20px;
+        width: 700px;
+    }
+    .navigation-auto {
+        width: 100%;
+        margin-top: 350px;
+    }
+    .navigation-manual {
+        width: 100%;
+        margin-top: 350px;
+    }
+
+}
